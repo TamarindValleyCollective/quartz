@@ -1,11 +1,9 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Tamarind Valley Collective
+  pageTitle: TVC Docs
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  # Analytics disabled (privacy). Revisit during theming if wanted.
-  analytics: null
   locale: en-US
   baseUrl: docs.tvc.farm
   # INTERIM baseline only. The authoritative confidentiality filter is the
@@ -101,8 +99,11 @@ plugins:
   - source: github:quartz-community/citations
     enabled: false
     order: 85
+  # Parity with Obsidian/GFM: render a source newline as a line break. Vault
+  # prose is one-line-per-paragraph, so this only affects deliberate single
+  # newlines (e.g. address blocks) — matching how they render in Obsidian.
   - source: github:quartz-community/hard-line-breaks
-    enabled: false
+    enabled: true
     order: 90
   - source: github:quartz-community/ox-hugo
     enabled: false
@@ -255,6 +256,12 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/stacked-pages
+    enabled: false
+    layout:
+      position: afterBody
+      priority: 50
+      display: all
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}
@@ -270,12 +277,6 @@ plugins:
     layout:
       position: body
       priority: 100
-      display: all
-  - source: github:quartz-community/stacked-pages
-    enabled: false
-    layout:
-      position: afterBody
-      priority: 50
       display: all
 layout:
   groups:
