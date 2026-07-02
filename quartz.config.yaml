@@ -102,6 +102,10 @@ plugins:
     order: 92
   - source: github:quartz-community/fonts
     enabled: true
+    options:
+      header: Fraunces
+      body: Nunito Sans
+      code: IBM Plex Mono
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:jace/quartz5-plugin-exclude-publish
