@@ -43,7 +43,7 @@ plugins:
   - source: github:jace/quartz5-plugin-readme-as-index
     enabled: true
     order: 1
-  - source: github:quartz-community/created-modified-date
+  - source: github:jace/quartz5-plugin-created-modified-date
     enabled: true
     options:
       defaultDateType: modified
@@ -51,6 +51,16 @@ plugins:
         - frontmatter
         - git
         - filesystem
+      createdFields:
+        - created
+        - date
+      modifiedFields:
+        - modified
+        - updated
+        - last-modified
+      publishedFields:
+        - published
+        - date
     order: 10
   - source: github:quartz-community/syntax-highlighting
     enabled: true
