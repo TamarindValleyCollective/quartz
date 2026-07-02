@@ -12,13 +12,13 @@
 .page-title a::before {
   content: "";
   flex-shrink: 0;
-  align-self: baseline;
-  // Match the title's cap height so the mark lines up with the wordmark and
-  // scales with the (responsive) font instead of overgrowing the text and the
-  // mobile hamburger. `em` is the fallback where the `cap` unit is unsupported.
-  width: 1em;
-  height: 1em;
-  width: 1cap;
-  height: 1cap;
+  align-self: center;
+  // Size to 1.3x the title's cap height: keeps the mark tied to the font (so it
+  // scales with the responsive title and never overgrows the text / mobile
+  // hamburger) while reading a touch larger than bare cap height. `em` is the
+  // fallback where the `cap` unit / calc is unsupported.
+  width: 1.3em;
+  height: 1.3em;
+  height: calc(1cap * 1.3);
   background: url("/static/icon.png") center / contain no-repeat;
 }
