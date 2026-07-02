@@ -122,6 +122,12 @@ plugins:
     enabled: true
   - source: github:quartz-community/explicit-publish
     enabled: false
+  # Confidentiality gate: reads the content repo's .pubignore (globby syntax,
+  # the single source of truth that travels with the content) and withholds
+  # matching paths — markdown and assets. Purely path/glob based.
+  # Repo: https://github.com/jace/quartz5-plugin-pubignore
+  - source: github:jace/quartz5-plugin-pubignore
+    enabled: true
   - source: github:quartz-community/alias-redirects
     enabled: true
   - source: github:quartz-community/content-index
