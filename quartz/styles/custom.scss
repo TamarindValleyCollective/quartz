@@ -5,14 +5,20 @@
 // the title text remains the accessible link label.
 .page-title a {
   display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
+  align-items: baseline;
+  gap: 0.4rem;
 }
 
 .page-title a::before {
   content: "";
   flex-shrink: 0;
-  width: 2.1rem;
-  height: 2.1rem;
+  align-self: baseline;
+  // Match the title's cap height so the mark lines up with the wordmark and
+  // scales with the (responsive) font instead of overgrowing the text and the
+  // mobile hamburger. `em` is the fallback where the `cap` unit is unsupported.
+  width: 1em;
+  height: 1em;
+  width: 1cap;
+  height: 1cap;
   background: url("/static/icon.png") center / contain no-repeat;
 }
