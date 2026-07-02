@@ -1,3 +1,18 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// TVC logo to the left of the page title ("TVC Docs") in the sidebar.
+// Uses the site icon (static/icon.png = the TVC mark) as a decorative mark;
+// the title text remains the accessible link label.
+.page-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.page-title a::before {
+  content: "";
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: url("/static/icon.png") center / contain no-repeat;
+}
