@@ -114,6 +114,12 @@ plugins:
     enabled: true
   - source: github:quartz-community/remove-draft
     enabled: true
+  # Opt-out publishing: exclude any page with frontmatter `publish: false`.
+  # The mirror of explicit-publish (opt-in), which stays disabled — this vault
+  # publishes everything except pages explicitly withheld or drafts.
+  # Repo: https://github.com/jace/quartz5-plugin-exclude-publish
+  - source: github:jace/quartz5-plugin-exclude-publish
+    enabled: true
   - source: github:quartz-community/explicit-publish
     enabled: false
   - source: github:quartz-community/alias-redirects
