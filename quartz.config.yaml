@@ -45,6 +45,14 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
+  # Treat a folder's README.md as its index (docs.tvc.farm). Rewrites
+  # <folder>/readme -> <folder>/index unless a sibling index already exists.
+  # Must run first so the remapped slug drives the file trie, link resolution,
+  # folder-page and content-index.
+  # Repo: https://github.com/jace/quartz5-plugin-readme-as-index
+  - source: github:jace/quartz5-plugin-readme-as-index
+    enabled: true
+    order: 1
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
