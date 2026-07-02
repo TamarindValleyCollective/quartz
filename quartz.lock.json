@@ -133,12 +133,6 @@
       "commit": "8be5be706d19ca34fa8e342327b78e11aff3d4f0",
       "installedAt": "2026-06-10T21:13:18.081Z"
     },
-    "footer": {
-      "source": "github:quartz-community/footer",
-      "resolved": "https://github.com/quartz-community/footer.git",
-      "commit": "6ed61928d3c0178d7cef972ebcbca6a206a2f065",
-      "installedAt": "2026-06-03T13:32:35.802Z"
-    },
     "github-flavored-markdown": {
       "source": "github:quartz-community/github-flavored-markdown",
       "resolved": "https://github.com/quartz-community/github-flavored-markdown.git",
@@ -281,6 +275,33 @@
       "resolved": "https://github.com/quartz-community/unlisted-pages.git",
       "commit": "f512d8672862c5891e63d755ba04b66277e6d760",
       "installedAt": "2026-06-03T13:32:36.647Z"
+    },
+    "quartz5-plugin-readme-as-index": {
+      "source": "github:jace/quartz5-plugin-readme-as-index",
+      "resolved": "https://github.com/jace/quartz5-plugin-readme-as-index.git",
+      "commit": "97f53173e2b82bc3a351c04a9991859cbbed8ac1",
+      "installedAt": "2026-07-02T09:36:13.516638Z"
+    },
+    "quartz5-plugin-pubignore": {
+      "source": "github:jace/quartz5-plugin-pubignore",
+      "resolved": "https://github.com/jace/quartz5-plugin-pubignore.git",
+      "commit": "6deec20a4f84ed02a5590dae844d7bdcf1452b5c",
+      "installedAt": "2026-07-02T09:36:13.516638Z"
+    },
+    "quartz5-plugin-exclude-publish": {
+      "source": "github:jace/quartz5-plugin-exclude-publish",
+      "resolved": "https://github.com/jace/quartz5-plugin-exclude-publish.git",
+      "commit": "e23d8c2ecdc0f0a5aca5195cb924524c345cd94c",
+      "installedAt": "2026-07-02T09:36:13.516638Z"
+    },
+    "footer": {
+      "source": {
+        "repo": "github:jace/quartz5-plugin-footer",
+        "name": "footer"
+      },
+      "resolved": "https://github.com/jace/quartz5-plugin-footer.git",
+      "commit": "8e022ea2f6524c89ae3661903ac56dabf080a72a",
+      "installedAt": "2026-07-02T09:36:13.516638Z"
     }
   }
 }

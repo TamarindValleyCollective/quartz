@@ -6,48 +6,40 @@ configuration:
   enablePopovers: true
   locale: en-US
   baseUrl: docs.tvc.farm
-  # INTERIM baseline only. The authoritative confidentiality filter is the
-  # forthcoming `.pubignore` Quartz plugin (reads the content repo's .pubignore).
-  # Do NOT grow this into a duplicate of .pubignore — that drift is the leak risk.
   ignorePatterns:
     - Private
-    - "Private-*"
+    - Private-*
     - Templates
     - .obsidian
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Fraunces
+      body: Nunito Sans
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#fbfaf6"
+        lightgray: "#e6e2d8"
+        gray: "#9c978a"
+        darkgray: "#3a4038"
+        dark: "#1c3326"
+        secondary: "#18723c"
+        tertiary: "#f68520"
+        highlight: rgba(24, 114, 60, 0.10)
+        textHighlight: "#f6852040"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#141613"
+        lightgray: "#2b2e27"
+        gray: "#5f6b60"
+        darkgray: "#cbd2c7"
+        dark: "#eaf0e7"
+        secondary: "#5cb37d"
+        tertiary: "#f79a3c"
+        highlight: rgba(92, 179, 125, 0.15)
+        textHighlight: "#f79a3c40"
 plugins:
-  # Treat a folder's README.md as its index (docs.tvc.farm). Rewrites
-  # <folder>/readme -> <folder>/index unless a sibling index already exists.
-  # Must run first so the remapped slug drives the file trie, link resolution,
-  # folder-page and content-index.
-  # Repo: https://github.com/jace/quartz5-plugin-readme-as-index
   - source: github:jace/quartz5-plugin-readme-as-index
     enabled: true
     order: 1
@@ -99,9 +91,6 @@ plugins:
   - source: github:quartz-community/citations
     enabled: false
     order: 85
-  # Parity with Obsidian/GFM: render a source newline as a line break. Vault
-  # prose is one-line-per-paragraph, so this only affects deliberate single
-  # newlines (e.g. address blocks) — matching how they render in Obsidian.
   - source: github:quartz-community/hard-line-breaks
     enabled: true
     order: 90
@@ -115,18 +104,10 @@ plugins:
     enabled: true
   - source: github:quartz-community/remove-draft
     enabled: true
-  # Opt-out publishing: exclude any page with frontmatter `publish: false`.
-  # The mirror of explicit-publish (opt-in), which stays disabled — this vault
-  # publishes everything except pages explicitly withheld or drafts.
-  # Repo: https://github.com/jace/quartz5-plugin-exclude-publish
   - source: github:jace/quartz5-plugin-exclude-publish
     enabled: true
   - source: github:quartz-community/explicit-publish
     enabled: false
-  # Confidentiality gate: reads the content repo's .pubignore (globby syntax,
-  # the single source of truth that travels with the content) and withholds
-  # matching paths — markdown and assets. Purely path/glob based.
-  # Repo: https://github.com/jace/quartz5-plugin-pubignore
   - source: github:jace/quartz5-plugin-pubignore
     enabled: true
   - source: github:quartz-community/alias-redirects
@@ -219,12 +200,18 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: github:quartz-community/footer
+  - source:
+      repo: github:jace/quartz5-plugin-footer
+      name: footer
     enabled: true
     options:
+      attribution: Maintained by the collective
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Website: https://tvc.farm/
+        Syntropic: https://www.syntropic.in/
+        GitHub: https://github.com/TamarindValleyCollective
+        X: https://x.com/TVCFarm
+        Instagram: https://www.instagram.com/tamarindvalleycollective
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
