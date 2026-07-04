@@ -237,7 +237,12 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  - source: github:quartz-community/bases-page
+  # Fork of quartz-community/bases-page adding deep-linkable view tabs (#slug).
+  # `name: bases-page` keeps the install dir as `bases-page` so the map-view
+  # plugin's `../../bases-page/dist/registry.js` import resolves. Upstream PR pending.
+  - source:
+      repo: github:jace/quartz5-plugin-bases-page
+      name: bases-page
     enabled: true
     options: {}
     order: 50
