@@ -22,8 +22,8 @@
     "bases-page": {
       "source": "github:jace/quartz5-plugin-bases-page",
       "resolved": "https://github.com/jace/quartz5-plugin-bases-page.git",
-      "commit": "874943466b1d569ea0e5d0ee85416ff317df389b",
-      "installedAt": "2026-07-04T14:33:02.000Z"
+      "commit": "3eb83af71ef05dba16f40362e65ac1b215363c94",
+      "installedAt": "2026-07-04T15:39:30.000Z"
     },
     "breadcrumbs": {
       "source": "github:quartz-community/breadcrumbs",
@@ -289,8 +289,8 @@
     "quartz5-plugin-bases-map-view": {
       "source": "github:jace/quartz5-plugin-bases-map-view",
       "resolved": "https://github.com/jace/quartz5-plugin-bases-map-view.git",
-      "commit": "89c54dd055e5d79ba7ce443d927d585dbd9ec4b1",
-      "installedAt": "2026-07-04T09:53:03.413998Z"
+      "commit": "4e35dae634c4a2ee6b33baf3c478a4481f2fd703",
+      "installedAt": "2026-07-04T15:39:30.000Z"
     }
   }
 }
