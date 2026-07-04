@@ -289,8 +289,8 @@
     "quartz5-plugin-bases-map-view": {
       "source": "github:jace/quartz5-plugin-bases-map-view",
       "resolved": "https://github.com/jace/quartz5-plugin-bases-map-view.git",
-      "commit": "4e35dae634c4a2ee6b33baf3c478a4481f2fd703",
-      "installedAt": "2026-07-04T15:39:30.000Z"
+      "commit": "70ea14571f0a0dc8f343401b6762ee4650e813a1",
+      "installedAt": "2026-07-04T15:45:00.000Z"
     }
   }
 }
