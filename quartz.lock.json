@@ -22,8 +22,8 @@
     "bases-page": {
       "source": "github:jace/quartz5-plugin-bases-page",
       "resolved": "https://github.com/jace/quartz5-plugin-bases-page.git",
-      "commit": "4666606ae476e220b2f6de4479fb7596220b11bf",
-      "installedAt": "2026-07-05T06:22:00.000Z"
+      "commit": "dfb82a9280eb1141d1de76c370fdbb13bfa3cd0e",
+      "installedAt": "2026-07-05T08:15:00.000Z"
     },
     "breadcrumbs": {
       "source": "github:quartz-community/breadcrumbs",
