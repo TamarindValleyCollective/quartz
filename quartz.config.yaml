@@ -13,22 +13,22 @@ configuration:
     - .obsidian
   theme:
     fontOrigin: googleFonts
-    cdnCaching: true
+    cdnCaching: false
     typography:
       header: Fraunces
-      body: Nunito Sans
+      body: Inter
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#fbfaf6"
-        lightgray: "#e6e2d8"
-        gray: "#9c978a"
-        darkgray: "#3a4038"
-        dark: "#1c3326"
-        secondary: "#18723c"
-        tertiary: "#f68520"
-        highlight: rgba(24, 114, 60, 0.10)
-        textHighlight: "#f6852040"
+        light: "#faf7ee"
+        lightgray: "#e2ddc9"
+        gray: "#57604f"
+        darkgray: "#22291f"
+        dark: "#22291f"
+        secondary: "#3d6e52"
+        tertiary: "#f78520"
+        highlight: rgba(61, 110, 82, 0.10)
+        textHighlight: "#f7852040"
       darkMode:
         light: "#141613"
         lightgray: "#2b2e27"
@@ -114,9 +114,18 @@ plugins:
   - source: github:quartz-community/fonts
     enabled: true
     options:
-      header: Fraunces
-      body: Nunito Sans
-      code: IBM Plex Mono
+      fontOrigin: selfHosted
+      header:
+        name: Fraunces
+        weights: [400, 600, 700]
+        includeItalic: true
+      body:
+        name: Inter
+        weights: [400, 600, 700]
+        includeItalic: true
+      code:
+        name: IBM Plex Mono
+        weights: [400, 600]
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:jace/quartz5-plugin-exclude-publish
