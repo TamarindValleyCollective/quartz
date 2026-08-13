@@ -32,7 +32,7 @@ configuration:
       darkMode:
         light: "#141613"
         lightgray: "#2b2e27"
-        gray: "#5f6b60"
+        gray: "#788779"
         darkgray: "#cbd2c7"
         dark: "#eaf0e7"
         secondary: "#5cb37d"
