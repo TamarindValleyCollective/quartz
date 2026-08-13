@@ -50,9 +50,10 @@
 
   &[data-callout="info"],
   &[data-callout="todo"] {
-    --color: #00b8d4;
-    --border: #00b8d444;
-    --bg: #00b8d410;
+    // TVC Sky Blue, from the "Design system" note's Nature palette
+    --color: #4e8fb5;
+    --border: #4e8fb544;
+    --bg: #4e8fb510;
     --callout-icon: var(--callout-icon-info);
   }
 
@@ -82,9 +83,10 @@
   }
 
   &[data-callout="warning"] {
-    --color: #db8942;
-    --border: #db894244;
-    --bg: #db894210;
+    // TVC Earth Brown, from the "Design system" note's Nature palette
+    --color: #6f4a2e;
+    --border: #6f4a2e44;
+    --bg: #6f4a2e10;
     --callout-icon: var(--callout-icon-warning);
   }
 
